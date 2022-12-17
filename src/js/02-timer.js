@@ -17,7 +17,6 @@ const time = {
   start: 0,
   finish: 0,
 };
-
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -47,14 +46,14 @@ refs.start.addEventListener('click', () => {
 
 function convertMs(ms) {
   setInterval(() => {
-    if (ms <= 900) {
+    if (ms <= 0) {
       stopTimer();
       refs.days.textContent = "00";
       refs.hours.textContent = "00";
       refs.min.textContent = "00";
       refs.sec.textContent = "00";
     } else {
-         // Number of milliseconds per unit of time
+    // Number of milliseconds per unit of time
     const second = 1000;
     const minute = second * 60;
     const hour = minute * 60;
