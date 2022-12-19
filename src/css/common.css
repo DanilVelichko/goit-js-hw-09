@@ -16,3 +16,30 @@ img {
   display: block;
   max-width: 100%;
 }
+
+div.timer {
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+   letter-spacing: .1rem;
+}
+
+div.timer>span {
+  display: block;
+  font-size: 4.5rem;
+}
+.field>.label {
+  font-size: 1.4em;
+}
+[data-days] {
+   font-size: 1.3em;
+}
+[data-hours] {
+   font-size: 1.2em;
+}
+[data-minutes] {
+   font-size: 1.1em;
+}
+[data-seconds] {
+   font-size: 1.em;
+}
